@@ -17,6 +17,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024
+                                                         diskCapacity:20 * 1024 * 1024
+                                                             diskPath:nil];
+    [NSURLCache setSharedURLCache:URLCache];
+    
+    
+    NSLog(@"%@",[NSDate date]);
+    
+    NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+    
+    NSInteger interval = [timeZone secondsFromGMTForDate:[NSDate date]];
+    
+    NSDate *date = [NSDate dateWithTimeInterval:interval sinceDate:[NSDate date]];
+    
+    NSLog(@"%@",date);
+    
+    NSArray *array = @[@"1",@"2",@"3"];
+    
+    NSLog(@"%@",array);//123
+    
+    //(lldb) expression array = @[@"a",@"b"];
+    NSArray *newArray = [NSArray arrayWithArray:array];
+    
+    NSLog(@"%@",array);//ab
+    
+    NSLog(@"%@",newArray);//ab
     return YES;
 }
 

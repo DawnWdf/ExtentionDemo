@@ -1,0 +1,13 @@
+//
+//  NSObject+DWLog.m
+//  FoundationDemo
+//
+//  Created by Dawn Wang on 2017/6/14.
+//  Copyright © 2017年 Dawn Wang. All rights reserved.
+//
+
+#import "NSObject+DWLog.h"
+
+@implementation NSObject (DWLog)
+
+@end
