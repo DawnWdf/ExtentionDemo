@@ -22,6 +22,7 @@
 		CF5D2A7D1F0B46DB0022A5BB /* NSObject+Class.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5D2A781F0B46DB0022A5BB /* NSObject+Class.m */; };
 		CF5D2A7E1F0B46DB0022A5BB /* NSObject+Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5D2A7A1F0B46DB0022A5BB /* NSObject+Coding.m */; };
 		CF5D2A7F1F0B46DB0022A5BB /* NSObject+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5D2A7C1F0B46DB0022A5BB /* NSObject+Copy.m */; };
+		CF67A088213550AE004E6AAE /* UIButton+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = CF67A087213550AE004E6AAE /* UIButton+Position.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		CF5D2A7A1F0B46DB0022A5BB /* NSObject+Coding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Coding.m"; sourceTree = "<group>"; };
 		CF5D2A7B1F0B46DB0022A5BB /* NSObject+Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Copy.h"; sourceTree = "<group>"; };
 		CF5D2A7C1F0B46DB0022A5BB /* NSObject+Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Copy.m"; sourceTree = "<group>"; };
+		CF67A086213550AE004E6AAE /* UIButton+Position.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Position.h"; sourceTree = "<group>"; };
+		CF67A087213550AE004E6AAE /* UIButton+Position.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Position.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +129,9 @@
 				CF5D2A351F0B46000022A5BB /* AppDelegate.m */,
 				CF5D2A371F0B46000022A5BB /* ViewController.h */,
 				CF5D2A381F0B46000022A5BB /* ViewController.m */,
+				CF67A08521355080004E6AAE /* UIKit */,
 				CF5D2A6F1F0B46940022A5BB /* Model */,
 				CF5D2A641F0B46250022A5BB /* Foundation */,
-				CF5D2A651F0B46250022A5BB /* UIKit */,
 				CF5D2A3A1F0B46000022A5BB /* Main.storyboard */,
 				CF5D2A3D1F0B46000022A5BB /* Assets.xcassets */,
 				CF5D2A3F1F0B46000022A5BB /* LaunchScreen.storyboard */,
@@ -173,13 +176,6 @@
 				CF5D2A681F0B464A0022A5BB /* NSString+ */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		CF5D2A651F0B46250022A5BB /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIKit;
 			sourceTree = "<group>";
 		};
 		CF5D2A661F0B464A0022A5BB /* NSArray+ */ = {
@@ -229,6 +225,15 @@
 				CF5D2A7C1F0B46DB0022A5BB /* NSObject+Copy.m */,
 			);
 			path = "NSObject+";
+			sourceTree = "<group>";
+		};
+		CF67A08521355080004E6AAE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CF67A086213550AE004E6AAE /* UIButton+Position.h */,
+				CF67A087213550AE004E6AAE /* UIButton+Position.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +374,7 @@
 				CF5D2A751F0B469F0022A5BB /* Person.m in Sources */,
 				CF5D2A6B1F0B46760022A5BB /* NSArray+Log.m in Sources */,
 				CF5D2A7E1F0B46DB0022A5BB /* NSObject+Coding.m in Sources */,
+				CF67A088213550AE004E6AAE /* UIButton+Position.m in Sources */,
 				CF5D2A7D1F0B46DB0022A5BB /* NSObject+Class.m in Sources */,
 				CF5D2A361F0B46000022A5BB /* AppDelegate.m in Sources */,
 				CF5D2A6E1F0B467C0022A5BB /* NSDictionary+Log.m in Sources */,
@@ -605,6 +611,7 @@
 				CF5D2A5D1F0B46000022A5BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF5D2A5E1F0B46000022A5BB /* Build configuration list for PBXNativeTarget "ExtentionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +620,7 @@
 				CF5D2A601F0B46000022A5BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF5D2A611F0B46000022A5BB /* Build configuration list for PBXNativeTarget "ExtentionDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -621,6 +629,7 @@
 				CF5D2A631F0B46000022A5BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
