@@ -52,11 +52,11 @@
                 titleOffsetXRight = imageWidth + pading ;
             }else{
                 //图片中心横向位移：图片在右时的中心点-图片在左时中心点
-                imageOffsetXLeft  = labelWidth + pading;
+                imageOffsetXLeft  = labelWidth + pading / 2;
                 imageOffsetXRight = -imageOffsetXLeft;
                 
                 //文字中心横向位移：
-                titleOffsetXRight = (imageWidth);
+                titleOffsetXRight = (imageWidth + pading / 2);
                 titleOffsetXLeft = -titleOffsetXRight;
             }
             break;
